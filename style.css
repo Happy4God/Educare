@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-div {
+    width: 50%;
+    height: 50%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-info h2,
+.courses-info h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #000000;
+    line-height: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero,
+.about,
+.courses {
+    margin: 10rem auto;
+    width: 80vw;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+
+/* Nav bar */
+nav {
+    height: 10vh;
+    background-color: #F9E0AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav .nav-links ul {
+    display: flex;
+    gap: 10rem;
+}
+
+nav .nav-links a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+
+nav button {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #C24914;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+/* Hero Section */
+.hero .home-info h2 {
+    font-weight: 700;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.hero .home-info p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.46);
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.hero .home-info button {
+    background-color: #682C0E;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 0.85rem;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+/* About Section */
+.about-info ul li {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000000;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 2rem;
+}
+
+/* Blog Section */
+.blog {
+    width: 80vw;
+    height: 10vh;
+    margin: 5rem auto;
+    background-color: #F9E0AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog .blog-info {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog .blog-info div {
+    background-color: #FFFFFF;
+    padding: 1rem 5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blog .blog-info .blog-subscribe {
+    background-color: #C24914;
+}
+
+.blog .blog-info .blog-subscribe a {
+    color: #FFFFFF;
+}
+
+/* Contact Section */
+.contact {
+    width: 80vw;
+    height: 48rem;
+    margin: 10rem auto;
+    position: relative;
+}
+
+.contact .contact-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contact .contact-info {
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.contact .contact-info h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.contact .contact-info p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.46);
+    font-size: 1.2rem;
+}
+
+.contact .contact-info button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.85rem;
+    border: none;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    background-color: #FC8621;
+}
+
+.contact .contact-imgs .img1 {
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+}
+
+.contact .contact-imgs .img2 {
+    position: absolute;
+    left: 60%;
+    top: 0%;
+}
+
+.contact .contact-imgs .img3 {
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+}
+
+.contact .contact-imgs .img4 {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+/* Footer */
+footer {
+    background-color: #F9E0AE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+footer .links {
+    width: 80vw;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .links h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 3rem;
+}
+
+footer .links .social-links .social a {
+    margin-right: 1rem;
+}
+
+footer .links .useful-links li {
+    list-style-type: disc;
+    font-weight: 400;
+    color: #6C6C6C;
+    line-height: 2rem;
+    list-style-position: inside;
+}
+
+footer .links .contacts-links li {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 2rem;
+}
+
+footer .copyrights {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+footer .copyrights h6 {
+    color: #7D7A74;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:1500px) and (max-width:1700px) {
+.contact {
+    position: relative;
+}
+
+.contact .contact-info {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.contact .contact-imgs .img1 {
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+}
+
+.contact .contact-imgs .img2 {
+    position: absolute;
+    left: 60%;
+    top: 0%;
+}
+
+.contact .contact-imgs .img3 {
+    position: absolute;
+    left: 15%;
+    bottom: 40%;
+}
+
+.contact .contact-imgs .img4{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+}
+
+@media screen and (min-width:1000px) and (max-width:1500px) {
+nav .nav-links ul {
+    display: flex;
+    gap: 5rem;
+}
+.contact {
+    position: relative;
+}
+
+.contact .contact-info {
+    position: absolute;
+    top: 25%;
+    left: -10%;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.contact .contact-imgs .img1 {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+.contact .contact-imgs .img2 {
+    position: absolute;
+    left: 60%;
+    top: 0%;
+}
+
+.contact .contact-imgs .img3 {
+    position: absolute;
+    left: -10%;
+    bottom: 25%;
+}
+
+.contact .contact-imgs .img4{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+}
+@media screen and (min-width:500px) and (max-width:1000px) {
+nav {
+    height: 10vh;
+    background-color: #F9E0AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+nav .nav-links ul{
+    display: inline-block;
+}
+.img-div {
+    width: 100rem;
+    height: 100vh;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero,
+.about,
+.courses {
+    margin: 10rem auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+}
+.hero .home-info h2 {
+    font-weight: 700;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.hero .home-info p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.46);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+.blog {
+    width: 100vw;
+    height: 25vh;
+    margin: 5rem auto;
+    background-color: #F9E0AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog .blog-info {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 25vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog .blog-info div {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blog .blog-info .blog-subscribe {
+    background-color: #C24914;
+}
+
+.blog .blog-info .blog-subscribe a {
+    color: #FFFFFF;
+}
+.contact {
+    position: relative;
+}
+
+.contact .contact-info {
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    text-align: center;
+    line-height: 2rem;
+}
+.contact .contact-info h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.contact .contact-info p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.46);
+    font-size: 1rem;
+}
+
+.contact .contact-imgs .img1 {
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+}
+
+.contact .contact-imgs .img2 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+}
+
+.contact .contact-imgs .img3 {
+    position: absolute;
+    left: -10%;
+    bottom: 15%;
+}
+
+.contact .contact-imgs .img4{
+    position: absolute;
+    top: 35%;
+    right: 0%;
+}
+footer .links {
+    width: 80vw;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+}
